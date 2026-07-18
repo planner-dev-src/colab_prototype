@@ -1,0 +1,67 @@
+# ============================================================
+# .gitignore для colab_prototype
+# ============================================================
+
+# Виртуальное окружение
+.prototype_venv/
+venv/
+.venv/
+env/
+.env/
+
+# Настройки редакторов
+.vscode/
+.idea/
+*.code-workspace
+
+# Отчёты (создаются при запуске)
+reports/
+*.json
+*.txt
+
+# Резервные копии ноутбуков
+*_b.ipynb
+*_backup.ipynb
+*.bak
+
+# Локальные скрипты (не нужны в репозитории)
+environment.py
+run_prototype_local.py
+test_*.py
+*_test.py
+
+# Python кеш
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.temp
+
+# Данные (если большие, > 50 МБ)
+*.csv
+*.xlsx
+*.parquet
+*.pkl
+*.h5
+
+# Модели (большие файлы)
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.h5
